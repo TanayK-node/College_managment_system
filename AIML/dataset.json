@@ -1,0 +1,957 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello",
+                "Hi there",
+                "Hey",
+                "Good morning",
+                "Good afternoon",
+                "Good evening",
+                "Greetings",
+                "What's up?",
+                "How are you?",
+                "Howdy",
+                "Salutations",
+                "Hey hey",
+                "Morning!",
+                "Yo!",
+                "Hi, how's it going?"
+            ],
+            "responses": [
+                "Greetings from the night dunes! How can I assist you?",
+                "Hello! What's on your mind today?",
+                "Hi there! Ready to help you under the stars.",
+                "Hey! How can I make your day even better?",
+                "Good morning! What do you want to explore?",
+                "Good evening! How's your night going?",
+                "Salutations! What's your question?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Take care",
+                "Farewell",
+                "Catch you later",
+                "See ya",
+                "I'm off",
+                "Have a nice day",
+                "Later!",
+                "Peace out",
+                "Adios",
+                "Ciao",
+                "So long",
+                "Gotta go"
+            ],
+            "responses": [
+                "Goodbye! Enjoy the starry night!",
+                "See you later! Stay curious.",
+                "Take care! Come back anytime.",
+                "Farewell! Safe travels under the dunes.",
+                "Catch you later! Don't be a stranger.",
+                "Have a great day! See you soon.",
+                "Later! Hope to chat again."
+            ]
+        },
+        {
+            "tag": "admissions",
+            "patterns": [
+                "When do admissions open?",
+                "How do I apply?",
+                "What's the admission process?",
+                "When's the application deadline?",
+                "Are admissions still open?",
+                "What documents do I need?",
+                "Where's the application form?",
+                "What's the eligibility?",
+                "Is there an entrance exam?",
+                "When are results out?",
+                "How do I check admission status?",
+                "Can I apply late?",
+                "What's the admission fee?",
+                "Do I need recommendation letters?",
+                "How competitive is admission?"
+            ],
+            "responses": [
+                "Admissions open May 1st and close July 31st - check the website!",
+                "Apply online at the admissions portal.",
+                "Submit an app, docs, and maybe take an exam - details online.",
+                "Deadlines vary by program - see the admissions page.",
+                "Check the portal or call 555-1234 to confirm.",
+                "You need transcripts, ID, and the form - full list online.",
+                "Forms are on the website or at the office.",
+                "High school diploma and 3.0 GPA minimum - program-specific rules apply.",
+                "Some programs have exams - check your course.",
+                "Results drop in August via email or portal."
+            ]
+        },
+        {
+            "tag": "student_council",
+            "patterns": [
+                "What's the student council?",
+                "How do I join?",
+                "Who's on the council?",
+                "What do they do?",
+                "When are elections?",
+                "How do I contact them?",
+                "Benefits of joining?",
+                "When's the next meeting?",
+                "Can I nominate someone?",
+                "What events do they host?",
+                "Is it hard to get in?",
+                "Who's the president?",
+                "How do I campaign?",
+                "Are there council fees?",
+                "What's their budget?"
+            ],
+            "responses": [
+                "The council reps students and plans events - cool stuff!",
+                "Run in spring elections or apply for roles - portal has details.",
+                "Members are listed under 'Student Life' online.",
+                "They voice student needs and throw epic fests.",
+                "Elections are in April - watch for notices!",
+                "Email studentcouncil@university.edu.",
+                "Leadership skills and bragging rights!",
+                "Next meeting's on the council site.",
+                "Nominate via the portal pre-election.",
+                "Fests, drives, and more - check their calendar!"
+            ]
+        },
+        {
+            "tag": "college_fests",
+            "patterns": [
+                "What are college fests?",
+                "When's the next one?",
+                "What happens at fests?",
+                "How do I join?",
+                "Are they public?",
+                "Who organizes them?",
+                "Famous fests here?",
+                "Can I volunteer?",
+                "Are there prizes?",
+                "How do I register?",
+                "What's the fest theme?",
+                "Are fests free?",
+                "When's the schedule out?",
+                "Can I perform?",
+                "How big are they?",
+                "When are the fests?",
+                "When are fests held?"
+            ],
+            "responses": [
+                "Next one's October 15th - events page has it.",
+                "Fests are our big student parties - music, games, food!",
+                "Live shows, contests, and snacks - total blast!",
+                "Register online for events or just show up.",
+                "Some are open, some student-only - check details.",
+                "Student council and event crew run them.",
+                "StarFest and DuneDays are legendary!",
+                "Volunteers welcome - sign up online.",
+                "Prizes like cash and swag - win big!",
+                "Register via the fest link on the site.",
+                "Schedule's out a month before - check the events page."
+            ]
+        },
+        {
+            "tag": "fees",
+            "patterns": [
+                "What's the tuition?",
+                "Semester cost?",
+                "Tell me about fees.",
+                "How much is tuition?",
+                "Fee structure this year?",
+                "Extra fees?",
+                "Where do I see fees?",
+                "Payment options?",
+                "Can I pay late?",
+                "Are fees refundable?",
+                "What's the lab fee?",
+                "How do I pay online?",
+                "Any fee waivers?",
+                "Do fees include books?",
+                "What's the penalty for late payment?",
+                "How to pay fees?"
+            ],
+            "responses": [
+                "Tuition varies - check your program online.",
+                "Semester fees are on your portal.",
+                "Fees cover classes and some extras - details online.",
+                "Tuition's listed on the finance page.",
+                "This year's structure's on the website.",
+                "Labs and activities might cost extra - ask finance.",
+                "See fees in your student portal.",
+                "Pay online, bank transfer, or in-person.",
+                "Late payment has a penalty - check the finance page."
+            ]
+        },
+        {
+            "tag": "fee_structure",
+            "patterns": [
+                "Full fee breakdown?",
+                "Explain the fees?",
+                "How are fees calculated?",
+                "What's in tuition?",
+                "Hidden costs?",
+                "Where's the fee details?",
+                "Installment plans?",
+                "Missed payment consequences?",
+                "Hostel fees included?",
+                "Fee increases?",
+                "What's the activity fee?",
+                "Can I negotiate fees?",
+                "Are there discounts?",
+                "How do I appeal a fee?",
+                "What's the payment deadline?"
+            ],
+            "responses": [
+                "Breakdown's on the finance page - tuition, labs, more.",
+                "Fees cover classes; housing's separate.",
+                "Based on credits and program - site explains.",
+                "Tuition's for courses; books are extra.",
+                "No hidden fees - optional stuff might cost.",
+                "Details in the portal or from accounts.",
+                "Installments available - talk to finance.",
+                "Late fees apply - pay on time!"
+            ]
+        },
+        {
+            "tag": "faculty",
+            "patterns": [
+                "Who's the faculty?",
+                "Contact a professor?",
+                "My department's faculty?",
+                "Are profs nice?",
+                "Faculty qualifications?",
+                "Meet a professor?",
+                "Who teaches CS?",
+                "Guest lecturers?",
+                "How many in Engineering?",
+                "Faculty research help?",
+                "Office hours?",
+                "Who's the dean?",
+                "Faculty ratings?",
+                "Can I email profs?",
+                "New faculty hires?"
+            ],
+            "responses": [
+                "Faculty list's on department pages.",
+                "Email or visit office hours - online schedule.",
+                "Check 'Academics' for your dept's faculty.",
+                "Most are friendly - drop by!",
+                "PhDs and Masters - tons of experience.",
+                "Book via email or portal.",
+                "CS faculty's in the catalog.",
+                "Guest lecturers sometimes - stay tuned!"
+            ]
+        },
+        {
+            "tag": "alumni",
+            "patterns": [
+                "Famous alumni?",
+                "Connect with alumni?",
+                "What's the alumni group?",
+                "Alumni events?",
+                "Job help from alumni?",
+                "Join alumni network?",
+                "Alumni benefits?",
+                "Alumni stories?",
+                "Mentoring by alumni?",
+                "Alumni success?",
+                "Alumni donations?",
+                "Where's the alumni list?",
+                "Alumni reunions?",
+                "Can alumni visit?",
+                "Alumni job fairs?",
+                "Any notable alumnis?"
+            ],
+            "responses": [
+                "Dr. Maya Lin's famous - see alumni page!",
+                "Join the LinkedIn group or portal.",
+                "Alumni association runs events.",
+                "Reunions yearly - check the site.",
+                "Alumni post jobs via career office.",
+                "Register post-grad on the alumni site.",
+                "Networking and library access - nice perks!",
+                "Stories are online under 'Alumni'."
+            ]
+        },
+        {
+            "tag": "departments",
+            "patterns": [
+                "What departments exist?",
+                "List the departments?",
+                "CS department?",
+                "How many departments?",
+                "Engineering dept details?",
+                "Biology dept head?",
+                "Interdisciplinary options?",
+                "Arts dept courses?",
+                "Switch departments?",
+                "Biggest department?",
+                "New departments?",
+                "Dept contact info?",
+                "Dept rankings?",
+                "Faculty per dept?",
+                "Dept facilities?",
+                "Can I switch departments?",
+                "How can I switch departments?"
+            ],
+            "responses": [
+                "We've got CS, Mechanical, Electrical, Civil, Biology, Arts, Business - full list online!",
+                "12 departments - check the site.",
+                "Switch via advisor and portal."
+            ]
+        },
+        {
+            "tag": "scholarship",
+            "patterns": [
+                "Scholarships available?",
+                "How to apply?",
+                "What scholarships?",
+                "Types of scholarships?",
+                "Application process?",
+                "Merit-based options?",
+                "Eligibility rules?",
+                "Check scholarship status?",
+                "Need-based aid?",
+                "Scholarship deadlines?",
+                "Renewal process?",
+                "Scholarship amounts?",
+                "International student scholarships?",
+                "Partial scholarships?",
+                "Scholarship interviews?"
+            ],
+            "responses": [
+                "Merit and need-based - portal has details.",
+                "Apply via student portal.",
+                "Academic, athletic, financial aid - lots!",
+                "Merit needs high GPA - check online.",
+                "Fill out the form on the site.",
+                "Status is in your portal.",
+                "Need-based requires income proof.",
+                "Deadlines on scholarship page."
+            ]
+        },
+        {
+            "tag": "notices",
+            "patterns": [
+                "Where's the notice board?",
+                "New notices?",
+                "Latest announcements?",
+                "Access notices?",
+                "Recent updates?",
+                "Important news?",
+                "Deadlines to know?",
+                "Notice updates frequency?",
+                "Email alerts?",
+                "Missed a notice?",
+                "Notice archives?",
+                "Event notices?",
+                "Emergency notices?",
+                "How do I post?",
+                "Notice categories?"
+            ],
+            "responses": [
+                "Notices are on the portal or app.",
+                "New ones weekly - check often!",
+                "Latest on the website's notice section.",
+                "Digital board's in the app.",
+                "Email opt-in for alerts.",
+                "Archives online - search there.",
+                "Events posted regularly.",
+                "Emergencies via email and app."
+            ]
+        },
+        {
+            "tag": "attendance",
+            "patterns": [
+                "Check my attendance?",
+                "Attendance percentage?",
+                "Where's my record?",
+                "Online attendance?",
+                "Update frequency?",
+                "Fix attendance error?",
+                "Track history?",
+                "Improve attendance?",
+                "Attendance policy?",
+                "Missed class rules?",
+                "Attendance appeal?",
+                "Who marks attendance?",
+                "Attendance app?",
+                "Minimum attendance?",
+                "Attendance fines?"
+            ],
+            "responses": [
+                "Check in portal under 'Attendance'.",
+                "Percentage's in your dashboard.",
+                "Records online via app.",
+                "Updated after classes.",
+                "Report errors to prof or admin.",
+                "History's in the portal.",
+                "Attend all classes - talk to profs if issues.",
+                "Policy's online - 80% minimum."
+            ]
+        },
+        {
+            "tag": "assignments",
+            "patterns": [
+                "Submit assignments where?",
+                "Due dates?",
+                "Check deadlines?",
+                "Submission process?",
+                "Late submissions?",
+                "New assignments?",
+                "Upload assignments?",
+                "Assignment formats?",
+                "Grading policy?",
+                "Missed assignment?",
+                "Assignment extensions?",
+                "How's it graded?",
+                "Group assignments?",
+                "Assignment feedback?",
+                "Resubmit options?"
+            ],
+            "responses": [
+                "Submit via LMS in course section.",
+                "Due dates on LMS or syllabus.",
+                "Check deadlines in portal.",
+                "Upload to 'Assignments' tab.",
+                "Late depends on prof - ask!",
+                "New ones in course section.",
+                "PDF or Word - check rules.",
+                "Grading's in syllabus."
+            ]
+        },
+        {
+            "tag": "events",
+            "patterns": [
+                "Upcoming events?",
+                "College fest info?",
+                "Event details?",
+                "Semester events?",
+                "Register for events?",
+                "Workshops soon?",
+                "Cultural events?",
+                "Participate in events?",
+                "Event costs?",
+                "Event locations?",
+                "Event sponsors?",
+                "Cancel an event?",
+                "Event tickets?",
+                "Virtual events?",
+                "Event feedback?"
+            ],
+            "responses": [
+                "Events on website or app.",
+                "Fests each semester - check dates!",
+                "Details online under 'Events'.",
+                "Register via event page.",
+                "Workshops on notice board.",
+                "Cultural stuff's announced.",
+                "Sign up online or at venue.",
+                "Some free, some ticketed - check."
+            ]
+        },
+        {
+            "tag": "digital_library",
+            "patterns": [
+                "Access digital library?",
+                "Where's e-books?",
+                "Online library?",
+                "Library resources?",
+                "Journals online?",
+                "Library login?",
+                "Access restrictions?",
+                "Book not found?",
+                "Borrow e-books?",
+                "Library hours?",
+                "Search tips?",
+                "Physical library too?",
+                "Library fees?",
+                "Database access?",
+                "Request a book?"
+            ],
+            "responses": [
+                "Log in via portal with credentials.",
+                "E-books in library section.",
+                "Yes, online library's on site.",
+                "Books, journals, papers - tons!",
+                "Journals online - use your ID.",
+                "Ask staff if a book's missing.",
+                "Borrow per library rules.",
+                "24/7 online access."
+            ]
+        },
+        {
+            "tag": "housing",
+            "patterns": [
+                "Hostel options?",
+                "Apply for hostel?",
+                "Hostel fees?",
+                "On-campus dorms?",
+                "Choose roommate?",
+                "Hostel facilities?",
+                "Curfew rules?",
+                "Report hostel issues?",
+                "Hostel safety?",
+                "Vacate hostel?",
+                "Hostel availability?",
+                "Private housing?",
+                "Hostel rules?",
+                "Meal plans?",
+                "Hostel reviews?"
+            ],
+            "responses": [
+                "Single or shared - housing page.",
+                "Apply via portal 'Housing'.",
+                "Fees on website - varies.",
+                "Dorms on-campus - apply early!",
+                "Request roommates in app.",
+                "Wi-Fi, laundry, mess - check site.",
+                "Curfew in handbook.",
+                "Tell warden or use portal."
+            ]
+        },
+        {
+            "tag": "career_services",
+            "patterns": [
+                "Career help?",
+                "Job placement?",
+                "Internships?",
+                "Resume support?",
+                "Career fairs?",
+                "Interview prep?",
+                "Company tie-ups?",
+                "Placement rate?",
+                "Alumni career help?",
+                "Counseling booking?",
+                "Job listings?",
+                "Career workshops?",
+                "Networking events?",
+                "Post-grad jobs?",
+                "Salary stats?"
+            ],
+            "responses": [
+                "Jobs, resumes, counseling - career office.",
+                "Placement via career portal.",
+                "Internships on career site.",
+                "Resume help at center.",
+                "Fairs each semester - schedule online.",
+                "Workshops monthly - sign up!",
+                "Tons of company partnerships.",
+                "90% placement - stats online."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": [
+                "Sports teams?",
+                "Join a team?",
+                "Sports facilities?",
+                "Tryouts when?",
+                "Sports scholarships?",
+                "Gym details?",
+                "Inter-college sports?",
+                "Book facilities?",
+                "Team coaches?",
+                "Sports events?",
+                "Sports fees?",
+                "Equipment provided?",
+                "Sports rankings?",
+                "Recreational sports?",
+                "Sports injuries?",
+                "When are the tryouts for sports teams?"
+            ],
+            "responses": [
+                "Soccer, basketball, more - sports page.",
+                "Tryouts in August - check schedule.",
+                "Gym, fields, courts - awesome!",
+                "Scholarships via portal.",
+                "Gym's open daily - hours online.",
+                "Inter-college games - watch out!",
+                "Book via sports office.",
+                "Coaches listed on site."
+            ]
+        },
+        {
+            "tag": "clubs",
+            "patterns": [
+                "What clubs are there?",
+                "Join a club?",
+                "Club list?",
+                "Club activities?",
+                "Club fees?",
+                "Club meetings?",
+                "Start a club?",
+                "Club events?",
+                "Club leaders?",
+                "Club benefits?",
+                "Club size?",
+                "Club funding?",
+                "Club rules?",
+                "Club fairs?",
+                "Club awards?",
+                "What are the club fees?",
+                "How much are club fees?"
+            ],
+            "responses": [
+                "Tech, arts, debate - full list online.",
+                "30+ clubs - check portal.",
+                "Some have small fees - ask leaders.",
+                "Fees vary by club - check with leaders.",
+                "Meetings on club pages.",
+                "Propose via student council.",
+                "Club events on calendar."
+            ]
+        },
+        {
+            "tag": "transportation",
+            "patterns": [
+                "Campus transport?",
+                "Bus schedule?",
+                "Shuttle service?",
+                "Parking info?",
+                "Bike options?",
+                "Transport fees?",
+                "Late-night transport?",
+                "Off-campus travel?",
+                "Transport rules?",
+                "Lost and found?",
+                "Shuttle stops?",
+                "Carpooling?",
+                "Transport app?",
+                "Public transport?",
+                "Transport safety?",
+                "Is there any bus transportation?",
+                "Is there any bus tranportation?",
+                "Does the campus have buses?"
+            ],
+            "responses": [
+                "Shuttles run campus-wide - schedule online.",
+                "Buses every 30 mins - check app.",
+                "Free shuttles for students.",
+                "Parking permits via portal.",
+                "Bike racks everywhere - bring yours!",
+                "No transport fees - covered.",
+                "Late shuttles till midnight.",
+                "Public buses nearby - see map."
+            ]
+        },
+        {
+            "tag": "health_services",
+            "patterns": [
+                "Campus health services?",
+                "Clinic location?",
+                "Doctor appointment?",
+                "Health insurance?",
+                "Mental health support?",
+                "Emergency care?",
+                "Health fees?",
+                "Vaccinations?",
+                "Counseling services?",
+                "Health hours?",
+                "Sick leave policy?",
+                "Health records?",
+                "Gym health programs?",
+                "First aid?",
+                "Health events?",
+                "Where's the clinic located?"
+            ],
+            "responses": [
+                "Clinic's in Student Center - open 9-5.",
+                "Book doc via health portal.",
+                "Insurance optional - details online.",
+                "Counseling free - portal booking.",
+                "Emergencies call 911 or campus line.",
+                "Basic health free - extras cost.",
+                "Vaccines at clinic - check dates.",
+                "Counseling in Health Wing."
+            ]
+        },
+        {
+            "tag": "food_services",
+            "patterns": [
+                "Campus dining?",
+                "Cafeteria menu?",
+                "Meal plans?",
+                "Food prices?",
+                "Dining hours?",
+                "Special diets?",
+                "Food delivery?",
+                "Cafeteria location?",
+                "Food quality?",
+                "Meal vouchers?",
+                "Off-campus dining?",
+                "Food events?",
+                "Canteen rules?",
+                "Food allergies?",
+                "Dining feedback?",
+                "What's on the cafeteria menu today?"
+            ],
+            "responses": [
+                "Dining halls in North and South - menus online.",
+                "Daily menu on app - varies.",
+                "Meal plans via portal - $200-$500.",
+                "Cheap eats - $5 average.",
+                "Open 7 AM-10 PM - check site.",
+                "Vegan, gluten-free options - ask staff.",
+                "Delivery via app - some fees.",
+                "Main cafeteria's by library."
+            ]
+        },
+        {
+            "tag": "mechanical_dept",
+            "patterns": [
+                "What courses does Mechanical Engineering offer?",
+                "Who's the head of Mechanical Engineering?",
+                "How do I join the Mechanical robotics club?",
+                "What labs are in Mechanical Engineering?",
+                "Are there internships in Mechanical Engineering?",
+                "What's the placement rate for Mechanical Engineering?",
+                "Can I switch to Mechanical Engineering?",
+                "Faculty-to-student ratio in Mechanical Engineering?",
+                "Does Mechanical Engineering have 3D printing?",
+                "When are Mechanical Engineering project deadlines?",
+                "Specializations in Mechanical Engineering?",
+                "Contact a Mechanical Engineering professor?",
+                "Mechanical Engineering workshops this semester?",
+                "Cutoff GPA for Mechanical Engineering honors?",
+                "Does Mechanical Engineering host industry visits?"
+            ],
+            "responses": [
+                "Mechanical offers courses like thermodynamics, fluid mechanics, and robotics - check the site!",
+                "Dr. John Patel heads Mechanical - see the dept page.",
+                "Join the robotics club via the dept portal.",
+                "Labs include CAD/CAM, heat transfer, and robotics - check the dept page!",
+                "Internships are listed on the career portal.",
+                "90% placement rate - stats on dept site!",
+                "Switch with advisor approval - follow the portal process.",
+                "Faculty-to-student ratio is 1:15 - great support!"
+            ]
+        },
+        {
+            "tag": "cs_dept",
+            "patterns": [
+                "What languages does CS teach?",
+                "Who leads Computer Science?",
+                "How do I join the CS coding club?",
+                "Best lab in Computer Science?",
+                "Are there CS hackathons?",
+                "Job placement for CS grads?",
+                "Can I transfer to CS?",
+                "How many faculty in CS?",
+                "Does CS offer AI courses?",
+                "Next CS project submission?",
+                "CS electives available?",
+                "Reach a CS professor?",
+                "CS guest lectures this month?",
+                "Minimum grade for CS internships?",
+                "CS dept tech company collabs?",
+                "What's the placement rate for CS?"
+            ],
+            "responses": [
+                "CS teaches Python, Java, C++ - full list online.",
+                "Dr. Emily Chen leads CS - details on site.",
+                "Coding club signup's on the portal.",
+                "High-Performance Computing lab's the best!",
+                "Hackathons twice a semester - check events.",
+                "95% placement - CS rocks jobs!",
+                "Transfer via advisor - portal steps.",
+                "20 faculty - strong team!"
+            ]
+        },
+        {
+            "tag": "electrical_dept",
+            "patterns": [
+                "Subjects in Electrical Engineering?",
+                "Who's in charge of Electrical Engineering?",
+                "Join the Electrical Engineering club?",
+                "Equipment in Electrical labs?",
+                "Power system projects in Electrical?",
+                "Placement success for Electrical?",
+                "Switch to Electrical mid-year?",
+                "Professors in Electrical Engineering?",
+                "Renewable energy courses in Electrical?",
+                "Electrical assignment due dates?",
+                "Focus of Electrical electives?",
+                "Contact an Electrical professor?",
+                "Electrical seminars soon?",
+                "GPA for Electrical scholarships?",
+                "Electrical industry tours?"
+            ],
+            "responses": [
+                "Electrical covers circuits, power - see site.",
+                "Dr. Rajesh Kumar heads Electrical - online bio.",
+                "Club signup via student portal.",
+                "Labs have oscilloscopes, generators - top-notch!",
+                "Power projects yearly - dept page.",
+                "85% placement - great stats!",
+                "Switch possible - talk to advisor.",
+                "15 profs - expert crew!"
+            ]
+        },
+        {
+            "tag": "civil_dept",
+            "patterns": [
+                "What's taught in Civil Engineering?",
+                "Head of Civil Engineering?",
+                "Join Civil Engineering group?",
+                "Labs in Civil Engineering?",
+                "Bridge-building in Civil?",
+                "Job rate for Civil grads?",
+                "Move to Civil Engineering?",
+                "Faculty in Civil Engineering?",
+                "Sustainable design in Civil?",
+                "Next Civil deadline?",
+                "Civil electives?",
+                "Contact Civil professor?",
+                "Civil field trips planned?",
+                "Eligibility for Civil awards?",
+                "Construction site visits?"
+            ],
+            "responses": [
+                "Civil teaches structures, geotech - site details.",
+                "Dr. Priya Sharma leads Civil - bio online.",
+                "Group signup on portal.",
+                "Structural and soil labs - check dept.",
+                "Bridge projects each term - fun stuff!",
+                "80% job rate - solid career!",
+                "Transfer via advisor - easy steps.",
+                "12 faculty - great mentors!"
+            ]
+        },
+        {
+            "tag": "biology_dept",
+            "patterns": [
+                "Courses in Biology?",
+                "Biology Department head?",
+                "Join Biology research club?",
+                "Facilities in Biology?",
+                "Genetics projects in Biology?",
+                "Grad school rate for Biology?",
+                "Switch to Biology?",
+                "Instructors in Biology?",
+                "Biotech courses in Biology?",
+                "Biology lab report due?",
+                "Specializations in Biology?",
+                "Reach a Biology faculty?",
+                "Biology guest speakers?",
+                "GPA for Biology honors?",
+                "Field research in Biology?",
+                "Who heads Biology?"
+            ],
+            "responses": [
+                "Biology offers genetics, ecology - site list.",
+                "Dr. Sarah Kline heads Biology - online.",
+                "Research club via portal.",
+                "Labs with microscopes, incubators - cool!",
+                "Genetics projects each semester.",
+                "70% go to grad school - stats online.",
+                "Switch with advisor - portal.",
+                "10 instructors - expert team!"
+            ]
+        },
+        {
+            "tag": "arts_dept",
+            "patterns": [
+                "Programs in Arts?",
+                "Who runs Arts?",
+                "Join an Arts club?",
+                "Studios in Arts?",
+                "Art exhibitions by Arts?",
+                "Career path for Arts grads?",
+                "Transfer to Arts?",
+                "Faculty in Arts?",
+                "Music production in Arts?",
+                "Next Arts project due?",
+                "Arts electives?",
+                "Contact Arts professor?",
+                "Arts workshops this month?",
+                "Grade for Arts awards?",
+                "Gallery events in Arts?"
+            ],
+            "responses": [
+                "Arts has fine arts, music - check site.",
+                "Prof. Lisa Grant runs Arts - bio online.",
+                "Club signup on portal.",
+                "Painting, music studios - awesome!",
+                "Exhibitions each term - see calendar.",
+                "Varied careers - arts page info.",
+                "Transfer via advisor - simple!",
+                "8 faculty - creative crew!"
+            ]
+        },
+        {
+            "tag": "business_dept",
+            "patterns": [
+                "Curriculum in Business Studies?",
+                "Head of Business Studies?",
+                "Join Business Studies club?",
+                "Resources in Business Studies?",
+                "Entrepreneurship in Business?",
+                "Placement for Business Studies?",
+                "Switch to Business Studies?",
+                "Professors in Business Studies?",
+                "MBA prep in Business?",
+                "Business assignments due?",
+                "Business electives?",
+                "Reach Business faculty?",
+                "Networking in Business Studies?",
+                "GPA for Business honors?",
+                "Corporate visits in Business?"
+            ],
+            "responses": [
+                "Business covers finance, marketing - site list.",
+                "Dr. Michael Lee heads Business - online.",
+                "Club via student portal.",
+                "Case study rooms, software - great stuff!",
+                "Entrepreneurship projects yearly.",
+                "88% placement - strong stats!",
+                "Switch with advisor - portal.",
+                "14 profs - business pros!"
+            ]
+        },
+        {
+            "tag": "departmental_test",
+            "patterns": [
+                "When are the departmental tests?",
+                "How do I prepare for departmental exams?",
+                "Where can I find the departmental test schedule?",
+                "What are the departmental tests for CS?",
+                "Are there any practice questions for departmental exams?",
+                "How are departmental tests graded?",
+                "When will departmental test results be out?",
+                "What's the syllabus for departmental exams in Biology?",
+                "Do I need to register for departmental tests?",
+                "Where can I get previous departmental test papers?",
+                "What's the passing mark for departmental exams?",
+                "Are departmental tests online or offline?",
+                "Who conducts the departmental tests?",
+                "Can I retake a departmental test if I fail?",
+                "How often are departmental tests held?"
+            ],
+            "responses": [
+                "Departmental tests are usually held each semester - check your department's portal for the exact schedule.",
+                "Prepare by reviewing past papers and syllabus - available on the department website.",
+                "Test schedules are posted on the academic portal under 'Exams'.",
+                "CS departmental tests cover core subjects like programming and algorithms - check the syllabus online.",
+                "Practice questions might be available on the department's resource page or library.",
+                "Grading policies are in the syllabus - typically 40% to pass.",
+                "Results are posted on the portal, usually a month after the test.",
+                "Syllabus details are on the department page - email your dept head for specifics.",
+                "Some tests require registration - check with your department.",
+                "Previous test papers might be in the library or online portal.",
+                "Passing mark is usually 40% - confirm with your dept.",
+                "Tests can be online or offline - check the announcement.",
+                "Tests are conducted by the department faculty.",
+                "Retake policies depend on the dept - ask your advisor.",
+                "Tests are typically once or twice a semester - see the academic calendar."
+            ]
+        }
+    ]
+}
