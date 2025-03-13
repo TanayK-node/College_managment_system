@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 
 nltk.download('wordnet')
-nltk.download('punkt')
+nltk.download('punkt_tab')
 
 class ChatbotModel(nn.Module):
     def __init__(self, input_size, output_size):
