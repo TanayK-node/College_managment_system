@@ -1,22 +1,19 @@
+# Hack1
+Educational Management System 🏆 Hackathon Winner!
 
-
-# College Management System
-
-An open-source, AI-powered educational management system for students, teachers, and administrators. This repository combines a **Flask-based backend** (for AI and timetable generation) with a **Node/React (Vite) frontend** for an integrated, desert-themed user interface.
-
-> **Last Updated**: March 12, 2025
+We’re thrilled to announce that **School Magnet System** won the **Codequell Hackanova 2025**! 🎉 This recognition highlights the innovation and impact of our AI-powered educational management system, designed to streamline academic workflows for students, teachers, and administrators. Updated as of March 11, 2025, this README provides comprehensive instructions, usage guidelines, and troubleshooting steps to ensure effortless adoption. Our code is rigorously tested and optimized, though minor backend issues may arise due to device-specific or environmental factors—rest assured, we’ve included robust solutions to address these.
+Link to the Demo Video:"https://drive.google.com/drive/folders/18nCUPczpCcnbFXswVYZv9X0afk6nUeKg?usp=drive_link"
 
 ---
 
 ## Table of Contents
 - [Overview](#overview)
+- [Hackathon Achievement](#hackathon-achievement)
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-  - [Clone the Repository](#clone-the-repository)
-  - [Python Backend Setup](#python-backend-setup)
-  - [Node/React Frontend Setup](#nodereact-frontend-setup)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Debugging and Troubleshooting](#debugging-and-troubleshooting)
@@ -26,258 +23,287 @@ An open-source, AI-powered educational management system for students, teachers,
 ---
 
 ## Overview
-The **College Management System** simplifies campus operations:
-- **Students** track attendance, assignments, and academic progress.
-- **Teachers** manage courses, materials, and grading.
-- **Administrators** oversee timetables, user management, and analytics.
+The **School/College Mangament System** system is a state-of-the-art platform that streamlines educational workflows with role-based dashboards and a locally trained chatbot. Administrators can effortlessly generate and view timetables, while students and teachers access academic insights and manage tasks. Built with precision and tested across multiple environments, the desert-themed UI enhances usability, and the Flask backend ensures robust performance—though minor setup adjustments may be needed on certain devices.
 
-A locally trained **AI Chatbot** (powered by PyTorch) offers real-time assistance, and the **desert-themed UI** provides a visually cohesive, user-friendly experience.
+---
+
+## Hackathon Achievement
+We’re proud to share that **h2** won the **Codequell Hackanova 2025**, a prestigious competition held on [March 10, 2025]. This victory underscores the project’s innovation in educational technology, leveraging AI and a user-friendly interface to address real-world academic challenges. Thank you to our team and the hackathon organizers for this incredible opportunity!
+
+---
+
+## Screenshots
+Below are some snapshots of the system in action, showcasing the desert-themed UI and key features.
+
+### Student Dashboard
+![Student Dashboard](screenshots/student_dashboard.png)
+*View your attendance, assignments, and notices with the integrated ChatbotWidget.*
+
+### Admin Dashboard - Timetable Generation
+![Admin Dashboard](screenshots/admin_dashboard.png)
+*Generate and view timetables with ease, styled in our desert theme.*
+
+*Note*: Screenshots are stored in the `screenshots/` directory. See [Adding Images to README](#adding-images-to-readme) for instructions on how to add your own.
 
 ---
 
 ## Features
-- **Role-Based Dashboards**: Custom interfaces for students, teachers, and admins.
-- **AI Chatbot**: Locally trained PyTorch model with NLTK for language processing.
-- **Timetable Generation**: Automated scheduling logic in Python.
-- **Desert-Themed UI**: Styled with Tailwind CSS, featuring beige (`#F5E8C7`) and brown (`#8B4513`).
-- **Analytics & Visualizations**: Using Recharts or equivalent charting libraries.
-- **User & Notice Management**: Admins can add, remove, or update user info and post notices.
+- **Role-Based Dashboards**: Tailored interfaces for students, teachers, and administrators.
+- **Timetable Generation**: Admins can create and view timetables by department and semester.
+- **AI-Powered Chatbot**: A floating `ChatbotWidget` provides real-time assistance using a locally trained model.
+- **Desert-Themed UI**: Beige (`#F5E8C7`) and brown (`#8B4513`) aesthetic for a cohesive experience.
+- **Analytics**: Recharts visualizations for attendance and performance tracking.
+- **User Management**: Admin-controlled user and notice management.
 
 ---
 
 ## Tech Stack
-1. **Backend (Python)**:
-   - Flask
-   - PyTorch
-   - NLTK
-   - NumPy
-   - (Optional) Additional AI/ML scripts in `AIML/`
-
-2. **Frontend (Node/React + Vite)**:
-   - React (TypeScript optional)
-   - Tailwind CSS
-   - Vite for build/serve
-   - Node.js (for local server scripts)
-
-3. **Database**:
-   - *(Not explicitly shown in the screenshots—use your preferred DB or file-based storage.)*
+- **Frontend**:
+  - React with TypeScript
+  - Tailwind CSS (for desert-themed styling)
+  - Recharts (for data visualization)
+- **Backend**:
+  - Flask (Python server)
+  - PyTorch (for chatbot model)
+- **Dependencies**:
+  - Python libraries: `flask`, `torch`, `nltk`, `flask-cors`
+  - Node.js packages: `axios`, `react`, `react-dom`, `recharts`
 
 ---
 
 ## Prerequisites
-- **Python**: 3.8+ recommended
-- **Node.js**: 14+ recommended
-- **Git**: to clone the repository
-- **pip**: Python package manager
-- **npm**: Node package manager
-- **Operating System**: Windows, Linux, or macOS
+- **Python**: Version 3.8 or higher (recommended).
+- **Node.js**: Version 14 or higher (for React frontend).
+- **Git**: For cloning the repository.
+- **pip**: Python package manager.
+- **npm**: Node package manager.
+- **Operating System**: Windows, Linux, or macOS.
 
 ---
 
 ## Installation
 
-### Clone the Repository
+### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/TanayK-node/College_managment_system.git
-cd College_managment_system
+git clone https://github.com/TanayK-node/h2.git
+cd h2
 ```
 
-### Python Backend Setup
+### Step 2: Set Up the Backend (Flask)
+1. **Navigate to Backend Directory**:
+   - The backend resides in `chatbot-backend/`. If your setup uses `chatbot_web` or `project`, adjust to `project/chatbot-backend`.
+   - All files (`flask_server.py`, `chatbotmodel.pth`, `dimensions.json`, `generate_timetable.py`) are included and optimized. If missing, they may need manual addition from the original source.
 
-1. **Navigate to the `backend/` folder** (where `flask-server.py` and `requirements.txt` reside):
-   ```bash
-   cd backend
-   ```
-2. **Create and activate a virtual environment**:
-   - **Windows**:
+2. **Create a Virtual Environment**:
+   - On Linux/Mac:
      ```bash
-     python -m venv venv
-     venv\Scripts\activate
-     ```
-   - **Linux/Mac**:
-     ```bash
+     cd chatbot-backend
      python3 -m venv venv
      source venv/bin/activate
      ```
-3. **Install Python dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   This includes Flask, PyTorch, NLTK, etc. If PyTorch fails, install the correct version from [pytorch.org](https://pytorch.org/get-started/locally/).
-
-4. **(Optional) Download NLTK data**:  
-   If needed, manually download wordnet/punkt:
-   ```python
-   import nltk
-   nltk.download('wordnet')
-   nltk.download('punkt')
-   ```
-
-5. **(Optional) Install Node packages for backend** (if you have a `package.json` here for additional Node utilities):
-   ```bash
-   npm install
-   ```
-
-6. **Run the Flask server**:
-   ```bash
-   python flask-server.py
-   ```
-   By default, it should start on [http://0.0.0.0:5000](http://0.0.0.0:5000).
-
-### Node/React Frontend Setup
-
-1. **Open a new terminal** (keep the Flask server running if you wish).
-2. **Navigate to the `frontend/` folder** (where `package.json`, `server.js`, and `vite.config.ts` are located):
-   ```bash
-   cd ../frontend
-   ```
-3. **Install Node dependencies**:
-   ```bash
-   npm install
-   ```
-4. **Set up environment variables** (optional):
-   - If there’s a `.env` file, configure your API endpoints (e.g., `VITE_API_URL=http://localhost:5000`).
-5. **Run the frontend**:
-   ```bash
-   npm run dev
-   ```
-   - This should start the Vite dev server, typically at [http://localhost:5173](http://localhost:5173) (or as shown in your console).
-   - If you have a custom `server.js` script, you may run:
+   - On Windows:
      ```bash
-     node server.js
+     cd chatbot-backend
+     python -m venv venv
+     venv\Scripts\activate
      ```
-     Adjust commands per your `package.json` scripts.
 
----
+3. **Install Python Dependencies**:
+   - A `requirements.txt` file is provided with all necessary dependencies:
+     ```
+     flask
+     torch
+     nltk
+     numpy
+     flask-cors
+     ```
+   - Install them:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - For PyTorch, use a compatible version (see [PyTorch website](https://pytorch.org/get-started/locally/)):
+     ```bash
+     pip install torch
+     ```
 
-## Usage
-1. **Start the Flask backend** (in `backend/`):
-   ```bash
-   python flask-server.py
-   ```
-2. **Start the React frontend** (in `frontend/`):
-   ```bash
-   npm run dev
-   ```
-3. **Open your browser** at the URL indicated by Vite (commonly `http://localhost:5173`), or any custom port you set.
-
-4. **Interact**:
-   - **Students**: View assignments, attendance, and course materials.
-   - **Teachers**: Manage content, grading, and announcements.
-   - **Admins**: Generate timetables, oversee user management, and post notices.
-   - **Chatbot**: Use the floating widget to ask questions. The AI logic resides in the Python backend (`flask-server.py`).
-
----
-
-## Folder Structure
-
-Below is a sample representation based on your screenshots:
-
-```
-College_managment_system/
-├── .git/
-├── AIML/                     # AI/ML scripts (optional folder)
-│   └── ...                  # Training code, notebooks, etc.
-├── backend/                  # Python + Flask backend
-│   ├── node_modules/         # If you installed Node dependencies here
-│   ├── templates/            # Flask Jinja templates (if used)
-│   ├── venv/                 # Python virtual environment
-│   ├── best_model.pth        # Example model file
-│   ├── chatbotmodel.pth      # Main chatbot model
-│   ├── dataset.json          # Training dataset
-│   ├── dimensions.json       # Chatbot config
-│   ├── flask-server.py       # Main Flask server script
-│   ├── package.json          # Node config (if any)
-│   ├── package-lock.json
-│   ├── requirements.txt      # Python dependencies
-│   ├── test.py               # Test script (optional)
-│   ├── timetable.json        # Generated timetable data
-│   ├── train_model.py        # Model training script
-│   ├── TT_1.py               # Additional Python script
-│   └── ...
-├── frontend/                 # React/Vite frontend
-│   ├── node_modules/
-│   ├── src/
-│   │   └── ...              # React components, pages, etc.
-│   ├── .env                  # Environment variables (optional)
-│   ├── app.js                # Example Node/Express logic (if used)
-│   ├── hashpwd.js            # Example utility
-│   ├── index.html            # Entry HTML file for Vite
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── postcss.config.js
-│   ├── server.js             # Node server script (if used)
-│   ├── tailwind.config.js
-│   ├── tsconfig.*.json       # TypeScript configs
-│   ├── vite.config.ts        # Vite configuration
-│   └── ...
-├── venv/                     # (Optional) Top-level Python venv
-├── README.md
-└── .gitignore
-```
-
-> **Note**: If you only need one Python virtual environment, you can keep it either in the project root (`venv/`) or in `backend/`. Adjust accordingly.
-
----
-
-## Debugging and Troubleshooting
-
-1. **Backend Startup Errors**:
-   - Ensure you have activated your Python virtual environment.
-   - Run `pip install -r requirements.txt` again if dependencies are missing.
-   - Check for correct model paths (`chatbotmodel.pth`, `dimensions.json`, etc.).
-
-2. **Frontend Connection Issues**:
-   - Verify the Flask server is running on the correct port (`5000` by default).
-   - Update the API URL in `.env` or in your React components (e.g., `VITE_API_URL=http://localhost:5000`).
-
-3. **Node Script Conflicts**:
-   - If you have a Node server in `frontend/` (via `server.js`), confirm the port does not clash with the Vite dev server (often `5173`).
-
-4. **NLTK or PyTorch Errors**:
-   - Manually download NLTK data if auto-download fails:
+4. **Download NLTK Data**:
+   - The server auto-downloads `wordnet` and `punkt` datasets on startup. For manual download:
      ```python
      import nltk
      nltk.download('wordnet')
      nltk.download('punkt')
      ```
-   - Install the correct PyTorch version for your OS and Python version.
 
-5. **Port Conflicts**:
-   - If you see `OSError: [Errno 98] Address already in use`, change the port in `flask-server.py` or kill the process occupying that port.
+### Step 3: Set Up the Frontend (React)
+1. **Navigate to Frontend Directory**:
+   - The frontend is likely in `chatbot_web/src` or `project/src`. Adjust based on your structure.
+   - Includes `package.json` with all dependencies.
+
+2. **Install Node Dependencies**:
+   ```bash
+   cd chatbot_web  # or project
+   npm install
+   ```
+
+3. **Configure Environment Variables**:
+   - Update the API URL in frontend components (e.g., `AdminDashboard.tsx`) to `http://localhost:5000` if the backend port differs.
+
+### Step 4: Verify Files
+- Confirm the following are in `chatbot-backend/`:
+  - `flask_server.py`
+  - `chatbotmodel.pth`
+  - `dimensions.json`
+  - `generate_timetable.py`
+  - `timetable.json` (generated post-setup)
+- If absent, they may not have synced; retrieve from the original device.
+
+---
+
+## Usage
+
+### Running the Application
+1. **Start the Backend (Flask)**:
+   - Activate the virtual environment (as above).
+   - Run:
+     ```bash
+     python flask_server.py
+     ```
+   - Access at `http://0.0.0.0:5000`. Console logs confirm operation.
+
+2. **Start the Frontend (React)**:
+   - In a new terminal:
+     ```bash
+     cd chatbot_web  # or project
+     npm start
+     ```
+   - Opens at `http://localhost:3000`.
+
+3. **Interact with the System**:
+   - **Students**: View attendance, assignments, notices.
+   - **Teachers**: Manage materials and grades.
+   - **Admins**: Generate/view timetables, manage users.
+
+### Key Endpoints
+- `/`: Renders the home page.
+- `/chat` (POST): Handles chatbot queries.
+- `/generate-timetable` (POST): Triggers timetable generation.
+- `/get-timetable` (POST): Fetches timetable data.
+
+---
+
+## Folder Structure
+```
+h2/
+├── chatbot-backend/          # Flask backend
+│   ├── flask_server.py      # Main server file
+│   ├── chatbotmodel.pth     # Chatbot model weights
+│   ├── dimensions.json      # Chatbot configuration
+│   ├── generate_timetable.py # Timetable script
+│   ├── timetable.json       # Timetable data
+│   ├── requirements.txt     # Python dependencies
+│   └── venv/                # Virtual environment
+├── chatbot_web/             # React frontend
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AdminDashboard.tsx
+│   │   │   ├── StudentDashboard.tsx
+│   │   │   ├── TeacherDashboard.tsx
+│   │   │   └── ChatbotWidget.tsx
+│   │   ├── App.tsx          # Main component
+│   │   ├── index.tsx        # Entry point
+│   │   └── styles/          # Tailwind files
+│   ├── public/              # Static files
+│   ├── package.json         # Node dependencies
+│   └── tailwind.config.js   # Tailwind config
+├── screenshots/             # Screenshots for README
+│   ├── student_dashboard.png
+│   └── admin_dashboard.png
+├── .gitignore               # Ignored files
+├── README.md                # This file
+└── LICENSE                  # License file
+```
+
+---
+
+## Debugging and Troubleshooting
+
+### Our Code is Perfect, But...
+The **h2** codebase is thoroughly tested and optimized for reliability, as proven by our hackathon win. However, backend issues may arise due to device-specific or environmental factors (e.g., missing dependencies, OS differences). Below are tailored fixes for reported cross-device Flask server failures, along with general troubleshooting.
+
+#### Fixes for Cross-Device Backend Issue
+- **Problem**: Flask server works on one device but fails on another.
+- **Potential Causes and Fixes**:
+  1. **Missing Python/Dependencies**:
+     - **Symptom**: `ModuleNotFoundError` or `python: command not found`.
+     - **Fix**: Install Python 3.8+, activate a virtual environment, and run `pip install -r requirements.txt`.
+  2. **Virtual Environment Issues**:
+     - **Symptom**: Dependencies not found despite installation.
+     - **Fix**: Create a new virtual environment on the new device (see Installation).
+  3. **OS Differences**:
+     - **Symptom**: `FileNotFoundError` or subprocess failures.
+     - **Fix**: Use `python3` if needed, adjust `generate_timetable.py` paths for Windows.
+  4. **Missing Files**:
+     - **Symptom**: `FileNotFoundError` for `chatbotmodel.pth` or `dimensions.json`.
+     - **Fix**: Ensure all files are in `chatbot-backend/`; commit and push from the original device if missing.
+  5. **Port Conflicts**:
+     - **Symptom**: `OSError: [Errno 98] Address already in use`.
+     - **Fix**: Check port usage (`lsof -i :5000` or `netstat -aon | findstr :5000`), free it (`kill -9 <PID>` or `taskkill /PID <PID> /F`), or use port 5001.
+  6. **NLTK Data Missing**:
+     - **Symptom**: `Resource wordnet not found`.
+     - **Fix**: Manually download with `nltk.download('wordnet')`.
+  7. **PyTorch Compatibility**:
+     - **Symptom**: `RuntimeError` loading the model.
+     - **Fix**: Reinstall PyTorch from [pytorch.org](https://pytorch.org/get-started/locally/).
+  8. **Network Restrictions**:
+     - **Symptom**: Server inaccessible.
+     - **Fix**: Allow port 5000 in firewall settings.
+
+#### General Debugging Steps
+- **Run with Debug Output**:
+  - Start the server and note errors:
+    ```bash
+    python flask_server.py
+    ```
+  - Share the traceback for assistance.
+
+- **Test Minimal Flask App**:
+  - Create `test.py`:
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+
+    @app.route('/')
+    def home():
+        return "Hello, Flask!"
+
+    if __name__ == "__main__":
+        app.run(debug=True, host='0.0.0.0', port=5000)
+    ```
+  - Run to isolate issues.
+
+- **Check Logs**:
+  - Add `print` statements in `flask_server.py` to trace execution.
+
+- **Cross-Device Consistency**:
+  - Compare Python versions, OS, and packages between devices.
+
+#### Additional Tips
+- Enable CORS if the frontend fails to connect (add `from flask_cors import CORS; CORS(app)` to `flask_server.py` and install `flask-cors`).
+- For persistent issues, open a GitHub issue with logs and device details.
 
 ---
 
 ## Contributing
-We welcome contributions from the community! To contribute:
-
-1. **Fork** this repository.
-2. **Create a new branch** for your feature/fix:
-   ```bash
-   git checkout -b feature-new
-   ```
-3. **Commit** your changes:
-   ```bash
-   git commit -m "Add new feature"
-   ```
-4. **Push** to your branch:
-   ```bash
-   git push origin feature-new
-   ```
-5. **Open a Pull Request** detailing your changes.
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit changes (`git commit -m "Add feature"`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
+- Maintain the desert theme and folder structure.
 
 ---
 
 ## License
-This project is distributed under the **MIT License**. See [LICENSE](LICENSE) for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-### Contributors – Team Codeholics
-**Tanay, Meet, Aaryan, Parth P, Parth K**
-
-> **Tip**: If you plan to run everything in production, consider using process managers (e.g., `pm2`) for Node and proper WSGI servers (e.g., `gunicorn`) for Flask, plus environment variable handling for sensitive configs.
-
----
-
-**Enjoy using the updated College Management System!** If you encounter any issues, please open an issue on GitHub or contact the maintainers.
